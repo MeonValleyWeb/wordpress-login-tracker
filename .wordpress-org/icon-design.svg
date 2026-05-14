@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a0d2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0073aa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <circle cx="64" cy="64" r="60" fill="url(#iconGradient)"/>
+  
+  <!-- User silhouette -->
+  <circle cx="64" cy="48" r="16" fill="white"/>
+  <path d="M32 96 Q32 72 64 72 Q96 72 96 96 L96 104 L32 104 Z" fill="white"/>
+  
+  <!-- Activity indicator dot -->
+  <circle cx="88" cy="32" r="8" fill="#00d084"/>
+  
+  <!-- Clock arc for tracking -->
+  <path d="M88 32 L88 20 A12 12 0 0 1 100 32" fill="none" stroke="white" stroke-width="2"/>
+</svg>

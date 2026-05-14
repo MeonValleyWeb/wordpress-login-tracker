@@ -1,13 +1,16 @@
 {
   "name": "meonvalleyweb/custom-login-tracker",
   "type": "wordpress-plugin",
-  "description": "Dashboard for client support",
+  "description": "Comprehensive login tracking system with session monitoring, failed attempt tracking, geolocation, browser detection, and security alerts",
   "require": {
     "php": ">=8.1"
   },
   "require-dev": {
     "wp-coding-standards/wpcs": "^3.1",
-    "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "phpunit/phpunit": "^9.0",
+    "yoast/phpunit-polyfills": "^1.0",
+    "wp-cli/wp-cli": "^2.8"
   },
   "config": {
     "allow-plugins": {
@@ -15,7 +18,11 @@
     }
   },
   "scripts": {
-    "phpcs": "phpcs",
-    "phpcbf": "phpcbf"
+    "phpcs": "phpcs --standard=WordPress .",
+    "phpcbf": "phpcbf --standard=WordPress .",
+    "phpunit": "phpunit",
+    "test": ["@phpcs", "@phpunit"],
+    "make-pot": "wp i18n make-pot . languages/custom-login-tracker.pot --domain=custom-login-tracker",
+    "install-codestandards": "phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs"
   }
 }
