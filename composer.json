@@ -18,7 +18,7 @@
     }
   },
   "scripts": {
-    "phpcs": "phpcs --standard=WordPress .",
+    "phpcs": "phpcs --standard=WordPress --exclude=WordPress.Files.FileName .",
     "phpcbf": "phpcbf --standard=WordPress .",
     "phpunit": "phpunit",
     "test": ["@phpcs", "@phpunit"],
