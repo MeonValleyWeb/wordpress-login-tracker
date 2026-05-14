@@ -2,9 +2,9 @@
 Contributors: andrewwilkinson
 Donate link: https://meonvalleyweb.com
 Tags: login, security, tracking, monitoring, analytics, bedrock
-Requires at least: 5.0
+Requires at least: 6.0
 Tested up to: 6.9
-Requires PHP: 7.4
+Requires PHP: 8.1
 Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
